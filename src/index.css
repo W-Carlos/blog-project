@@ -19,4 +19,26 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  background-color: #002642;
+  color: #fff;
+  /*background-color: #1B1B1E;*/
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+p {
+  color: #a7c4c2;
 }
