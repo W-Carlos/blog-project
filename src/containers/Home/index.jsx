@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import api from "../../axios/config";
 import { Link } from "react-router-dom";
 import './style.css'
 
@@ -8,7 +8,7 @@ function Home() {
 
     const fetchApi = async () => {
         try {
-            const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts')
+            const { data } = await api.get('/posts')
             console.log(data)
 
             setPosts(data)

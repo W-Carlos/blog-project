@@ -13,7 +13,13 @@
 }
 
 .load {
+    font-size: 2rem;
+    font-weight: 600;
     text-align: center;
+}
+
+.container-items h3::first-letter {
+    text-transform: uppercase;
 }
 
 .container-items p {
@@ -21,9 +27,19 @@
   margin-bottom: 2rem;
 }
 
+.container-items p::first-letter {
+    text-transform: uppercase;
+}
+
 .container-items .button {
   opacity: 1;
   background-color: #26C485;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.5rem;
   border-radius: 1rem;
+
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
