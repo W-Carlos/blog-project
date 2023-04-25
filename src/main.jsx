@@ -7,6 +7,7 @@ import './index.css'
 import Home from '../src/containers/Home'
 import Users from '../src/containers/Users'
 import Comments from '../src/containers/Comments'
+import UserDetails from './containers/UserDetails'
 
 const router = createBrowserRouter([
   {
@@ -18,11 +19,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/usuarios",
-        element: <Users /> 
+        element: <Users />
       },
       {
         path: "/comentarios/:id",
         element: <Comments />
+      },
+      {
+        path: "/usuarios/:id",
+        element: <UserDetails />
       }
     ]
   }
@@ -30,6 +35,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router = {router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
