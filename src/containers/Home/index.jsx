@@ -31,7 +31,7 @@ function Home() {
                             <li>
                                 <h3>{post.title}</h3>
                                 <p>{post.body}</p>
-                                <Link to={`/posts/${post.id}`} className="button">Ler mais...</Link>
+                                <Link to={`/comentarios/${post.id}`} className="button">Ler mais...</Link>
                             </li>
                         </div>
                     ))

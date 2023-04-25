@@ -6,6 +6,7 @@ import './index.css'
 
 import Home from '../src/containers/Home'
 import Users from '../src/containers/Users'
+import Comments from '../src/containers/Comments'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/usuarios",
         element: <Users /> 
+      },
+      {
+        path: "/comentarios/:id",
+        element: <Comments />
       }
     ]
   }
